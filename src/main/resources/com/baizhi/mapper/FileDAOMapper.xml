@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="com.baizhi.dao.MyFileDAO1">
+   <!--查询所有-->
+    <select id="findAll" resultType="MyFile" >
+        select  * from  file
+    </select>
+    <!--添加-->
+    <insert id="save">
+        insert into file values(#{id},#{user_id},#{primeval_name},#{new_name},#{suffix},#{path},#{size},#{type},#{whether_img},#{download_number})
+    </insert>
+    <!--查单个-->
+    <select id="findById" resultType="MyFile">
+        select * from  file where id=#{id};
+    </select>
+    <!--删除-->
+    <delete id="delete">
+        delete  form file where id=#{id}
+    </delete>
+
+    <!--修改-->
+    <update id="update">
+        update file
+        <set>
+            <if test="">
+
+            </if>
+            <if test="">
+
+            </if>
+            <if test="">
+
+            </if>
+            <if test="">
+
+            </if>
+            <if test="">
+
+            </if>
+            <if test="">
+
+            </if>
+            <if test="">
+
+            </if>
+            <if test="">
+
+            </if>
+            <if test="">
+
+            </if>
+        </set>
+    </update>
+
+</mapper>
+
